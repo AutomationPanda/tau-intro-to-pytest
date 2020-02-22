@@ -1,2 +1,2 @@
-# intro-to-pytest
+# tau-intro-to-pytest
 Test Automation University: An Introduction to pytest
