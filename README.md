@@ -36,7 +36,6 @@ You can complete this course using any OS: Windows, macOS, Linux, etc.
 This course requires Python 3.
 You can download the latest Python version from [Python.org](https://www.python.org/downloads/).
 Follow the appropriate installation instructions for your operating system.
-(This course was developed using Python 3.8.1 on macOS 10.14.6.)
 
 You should have intermediate-level Python skills before attempting this course.
 Learning the language is always a prerequisite for learning automation.
@@ -71,20 +70,33 @@ and try running Python again.
 * [System Path Instructions for Linux](https://www.computerhope.com/issues/ch001647.htm)
 
 
-## pytest Installation
+## Python Package Installation
 
-pytest is a third-party package - it is not part of Python's standard library.
-That means it must be installed separately.
-To install pytest, enter `pip install pytest` at the command line.
-`pip` is the standard Python package installer.
+This course will use a handful of third-party packages:
+
+* pytest
+* pytest-bdd
+* pytest-cov
+* pytest-html
+* pytest-xdist
+* requests
+* selenium
+
+These packages are *not* part of Python's standard library.
+They must be installed separately using `pip`, the standard Python package installer.
+
+To install each package, enter `pip install <package-name>` at the command line.
+For example: `pip install pytest`.
+If you already have a package installed but need to upgrade its version,
+run `pip install --upgrade <package-name>`.
+
 Please note that if you need to use the `python3` command to run Python,
 then you might also need to use the `pip3` command in lieu of `pip`.
 
-(This course was developed using pytest 5.4.3.)
 
 ### Virtual Environments
 
-Running `pip install pytest` will install the pytest package globally for the whole system.
+Running `pip install` will install the pytest package globally for the whole system.
 Installing Python packages globally is okay for this course,
 but it typically isn't a best practice in the "read world."
 Instead, each project should manage its own dependencies locally using a virtual environment.
@@ -114,6 +126,21 @@ for complete documentation.
 *Warning:*
 If you attempt to run tests from this example project,
 make sure to checkout the correct branch first!
+
+
+## Course Version
+
+This course was developed and tested using the following versions:
+
+* macOS 10.14.6
+* Python 3.8.1
+* pytest 5.4.3
+* pytest-bdd 3.4.0
+* pytest-cov 2.10.0
+* pytest-html 2.1.1
+* pytest-xdist 1.32.0
+* requests 2.23.0
+* selenium 3.141.0
 
 
 ## Additional Resources
