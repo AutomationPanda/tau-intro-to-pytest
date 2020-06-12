@@ -31,6 +31,11 @@ Take the time to learn the concepts and code presented in each chapter.
 
 ## Python Setup
 
+Python setup can be complicated.
+This section documents how to set up your machine for Python test automation development.
+
+### Python Installation and Tools
+
 You can complete this course using any OS: Windows, macOS, Linux, etc.
 
 This course requires Python 3.
@@ -69,8 +74,7 @@ and try running Python again.
 * [System Path Instructions for macOS](https://www.educative.io/edpresso/how-to-add-python-to-the-path-variable-in-mac)
 * [System Path Instructions for Linux](https://www.computerhope.com/issues/ch001647.htm)
 
-
-## Python Package Installation
+### Python Packages
 
 This course will use a handful of third-party packages:
 
@@ -84,6 +88,8 @@ This course will use a handful of third-party packages:
 
 These packages are *not* part of Python's standard library.
 They must be installed separately using `pip`, the standard Python package installer.
+You can install them all before you create your test project,
+or you can install them as you complete each chapter in the course.
 
 To install each package, enter `pip install <package-name>` at the command line.
 For example: `pip install pytest`.
@@ -92,7 +98,6 @@ run `pip install --upgrade <package-name>`.
 
 Please note that if you need to use the `python3` command to run Python,
 then you might also need to use the `pip3` command in lieu of `pip`.
-
 
 ### Virtual Environments
 
@@ -106,6 +111,20 @@ For simplicity, this course will not use or teach virtual environments.
 If you would like to learn virtual environments on your own, then RealPython's article
 [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
 is an excellent place to start.
+
+### Course Versions
+
+This course was developed and tested using the following versions:
+
+* macOS 10.14.6
+* Python 3.8.1
+* pytest 5.4.3
+* pytest-bdd 3.4.0
+* pytest-cov 2.10.0
+* pytest-html 2.1.1
+* pytest-xdist 1.32.0
+* requests 2.23.0
+* selenium 3.141.0
 
 
 ## Running Tests
@@ -126,21 +145,6 @@ for complete documentation.
 *Warning:*
 If you attempt to run tests from this example project,
 make sure to checkout the correct branch first!
-
-
-## Course Version
-
-This course was developed and tested using the following versions:
-
-* macOS 10.14.6
-* Python 3.8.1
-* pytest 5.4.3
-* pytest-bdd 3.4.0
-* pytest-cov 2.10.0
-* pytest-html 2.1.1
-* pytest-xdist 1.32.0
-* requests 2.23.0
-* selenium 3.141.0
 
 
 ## Additional Resources
