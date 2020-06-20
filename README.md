@@ -79,12 +79,10 @@ and try running Python again.
 This course will use a handful of third-party packages:
 
 * pytest
-* pytest-bdd
 * pytest-cov
 * pytest-html
 * pytest-xdist
 * requests
-* selenium
 
 These packages are *not* part of Python's standard library.
 They must be installed separately using `pip`, the standard Python package installer.
@@ -119,12 +117,10 @@ This course was developed and tested using the following versions:
 * macOS 10.14.6
 * Python 3.8.1
 * pytest 5.4.3
-* pytest-bdd 3.4.0
 * pytest-cov 2.10.0
 * pytest-html 2.1.1
 * pytest-xdist 1.32.0
 * requests 2.23.0
-* selenium 3.141.0
 
 
 ## Running Tests
