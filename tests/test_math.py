@@ -72,8 +72,8 @@ products = [            # Below comments are the Multiplication Test Ideas
 
 # Pytest Parameters make it easy to do the data driven testing in which the same Test cases cranck through multiple inputs. This Test case 
 # is just a basic example that what you can do with paramaters. We can use any python object for parameter values not just integers. 
-# Sicne parameters are passed into the test cases as a list, we could also store the data into the external files like csv's or excel 
-# spreadhseets and read them when the test runs. 
+# Since parameters are passed into the test cases as a list, we could also store the data into the external files like csv's or excel 
+# spreadhsheets and read them when the test runs. 
 @pytest.mark.parametrize('a, b, product', products)
 # Inner function - is the Test Case. 
 def test_multiplication(a, b, product):
