@@ -1,8 +1,8 @@
-# tau-intro-to-pytest
+# Introduction to pytest: A Test Automation University Course
 
-This repository contains example code for *An Introduction to pytest*,
+This repository contains example code for [*Introduction to pytest*](https://testautomationu.applitools.com/pytest-tutorial/),
 a [Test Automation University](https://testautomationu.applitools.com/) course
-taught by [Andrew "Pandy" Knight](https://twitter.com/AutomationPanda).
+taught by [Pandy Knight](https://twitter.com/AutomationPanda).
 This course teaches how to automate test cases in Python using [pytest](https://pytest.org).
 
 
@@ -24,9 +24,8 @@ Take the time to learn the concepts and code presented in each chapter.
 
 ## Repository Branches
 
-* `master` contains the README but no example code
-* Each `example/*` branch contains chapter-specific example code
-* `example/develop` contains the completed example code for the end of the course
+* Each `chapter/*` branch contains the state of the code for each chapter
+* The `main` branch contains the final state of the code at the end of the course
 
 
 ## Python Setup
@@ -42,7 +41,7 @@ This course requires Python 3.
 You can download the latest Python version from [Python.org](https://www.python.org/downloads/).
 Follow the appropriate installation instructions for your operating system.
 
-You should have intermediate-level Python skills before attempting this course.
+You should have basic Python programming skills before attempting this course.
 Learning the language is always a prerequisite for learning automation.
 If you need help learning Python, check out this article:
 [How Do I Start Learning Python?](https://automationpanda.com/2020/02/18/how-do-i-start-learning-python/)
@@ -83,8 +82,9 @@ This course will use a handful of third-party packages:
 * pytest-html
 * pytest-xdist
 * requests
+* playwright
 
-These packages are *not* part of Python's standard library.
+These packages are *not* part of the Python Standard Library.
 They must be installed separately using `pip`, the standard Python package installer.
 You can install them all before you create your test project,
 or you can install them as you complete each chapter in the course.
@@ -110,17 +110,9 @@ If you would like to learn virtual environments on your own, then RealPython's a
 [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
 is an excellent place to start.
 
-### Course Versions
+### Package Versions
 
-This course was developed and tested using the following versions:
-
-* macOS 10.14.6
-* Python 3.8.1
-* pytest 5.4.3
-* pytest-cov 2.10.0
-* pytest-html 2.1.1
-* pytest-xdist 1.32.0
-* requests 2.23.0
+The [`requirements.txt`](requirements.txt) file contains the versions for each package used in this course.
 
 
 ## Running Tests
@@ -173,6 +165,6 @@ Related TAU courses:
 This course was written and delivered by **Andrew Knight** (aka *Pandy*), the "Automation Panda".
 Andy is a Pythonista who specializes in testing and automation.
 
-* Twitter: [@AutomationPanda](https://twitter.com/AutomationPanda)
 * Blog: [AutomationPanda.com](https://automationpanda.com/)
+* Twitter: [@AutomationPanda](https://twitter.com/AutomationPanda)
 * LinkedIn: [andrew-leland-knight](https://www.linkedin.com/in/andrew-leland-knight/)
